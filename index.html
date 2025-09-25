@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="sylesheet" href="../style.css">
+    <style>
+        nav{
+            font-size: 2em;
+        }
+        nav a{
+            text-decoration: none;
+            color:white;
+            padding: 0 10px
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">series</a>
+        <a href="">linguagens</a>
+
+        <div class="pagina"></div>
+    </nav>
+    <script>
+        function navegarViaAjax(url, selector, push = true){
+            if(!url|| !select) return
+        const elemento = document.querySelector(selector)
+    fetch(url)
+.then(resp => elemento.innetHTML = html)
+if(push){
+    history.pushState({selector}, "pagina ajax", url)
+
+}   
+ }
+ document.querySelectorAll('[wm-link]').forEach(link =>{
+    const url = link.attributes[wm-link].values
+    const selectorDestino = link.attributes['wm.destino'].values
+    link.onclick = e =>{
+    e.preventDefalt()
+    navegarViaAjax(url, selectorDestino)}
+    window.onpopstate = 
+ })
+    </script>
+</body>
+</html>
